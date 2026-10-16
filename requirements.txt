@@ -1,0 +1,22 @@
+# FindFire requirements. Tested with Python 3.12 and the versions in the comments.
+# Python 3.10 or newer is needed.
+
+# data and spatial
+numpy>=1.26            # tested 2.4
+pandas>=2.2            # tested 3.0   (2.2+ needed for the lowercase "12h" frequency)
+requests>=2.31         # tested 2.33
+scikit-learn>=1.3      # tested 1.8   (DBSCAN, BallTree with the haversine metric)
+geopandas>=0.14        # tested 1.2
+shapely>=2.0           # tested 2.2   (shapely.transform is used)
+pyproj>=3.4            # tested 3.8
+
+# maps and charts
+folium>=0.15           # tested 0.20  (interactive map)
+matplotlib>=3.7        # tested 3.10  (growth and history charts in the notebook)
+
+# running the notebooks
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# tests (optional: the notebook runs the same checks inline)
+pytest>=7.0            # tested 9.1
